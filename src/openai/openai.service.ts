@@ -46,7 +46,7 @@ export class OpenaiService {
 
       const response = await this.openai.chat.completions.create({
         messages: [{ role: 'system', content: systemPrompt }, ...userContext],
-        model: process.env.OPENAI_MODEL || 'gpt-4o-2024-05-13',
+        model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
       });
 
       const aiResponse = response.choices[0].message.content;
