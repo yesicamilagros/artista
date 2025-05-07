@@ -62,3 +62,5 @@ audioFiles/
 audio/
 stabilityai/
 .env
+
+.env.example
